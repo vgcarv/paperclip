@@ -32,7 +32,6 @@ services:
     volumes:
       - /mnt/hd/paperclip:/paperclip
     depends_on:
-      db:
-        condition: service_healthy
-
+      - db
+        
  
